@@ -4,6 +4,7 @@ convert :: [Char] -> [Int]
 convert "" = []
 convert (' ':xs) = convert xs
 convert (x:xs) = (Char.digitToInt x):convert xs
+-- can use "words" function + comprehension list
 
 main = do
     line <- getLine
